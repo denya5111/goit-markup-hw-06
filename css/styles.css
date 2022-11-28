@@ -539,6 +539,10 @@ header {
 .modal-form-checkbox input {
   appearance: none;
 }
+.modal-form-checkbox input:hover + .modal-form-checkbox-icon,
+.modal-form-checkbox input:focus + .modal-form-checkbox-icon {
+  border-color: var(--accent-color);
+}
 .modal-form-checkbox input:checked + .modal-form-checkbox-icon {
   border: transparent;
   color: var(--accent-color);
@@ -549,6 +553,9 @@ header {
   border: 2px solid #212121;
   border-radius: 2px;
   fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox a {
