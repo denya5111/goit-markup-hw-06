@@ -493,6 +493,7 @@ header {
 }
 
 .modal-form-icon {
+  color: #212121;
   position: absolute;
   bottom: 11px;
   left: 12px;
